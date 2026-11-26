@@ -64,15 +64,5 @@ function checkWinner() {
 }
 
 function restartGame() {
-
-    board = ["", "", "", "", "", "", "", "", ""];
-    currentPlayer = "X";
-    gameActive = true;
-
-    cells.forEach(cell => {
-        cell.textContent = "";
-    });
-
-    statusText.textContent = "Player X's Turn";
-}
-  
+    location.reload();
+} 
